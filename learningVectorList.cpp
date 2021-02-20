@@ -4,6 +4,7 @@
 #include <random>
 #include <iterator>
 #include <cassert>
+#include <algorithm>
 
 using std::cout;
 using std::endl;
@@ -34,5 +35,7 @@ int main(){
 //	cout << "Hello" << endl;
 	generateVector(vec, size);
 	printVector(vec);
+	copy(vec.begin(), vec.end(), std::ostream_iterator<int>(cout," "));
+	cout << endl;
 
 }
