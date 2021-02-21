@@ -44,4 +44,5 @@ int main(){
 	vec.shrink_to_fit();
 	cout << vec.capacity() << ' ' << vec.size() << endl;
 	unique_copy(vec.begin(), vec.end(), std::ostream_iterator<int>(cout, " "));
+	cout << endl;
 }
